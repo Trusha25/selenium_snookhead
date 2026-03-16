@@ -2,18 +2,32 @@
 
 This document explains the correct order to run the automation scripts in the Snookhead Selenium project.
 
+## Folder Structure Used
+
+The project contains the following relevant scripts:
+
+- Games/game_creation/Game_creation.py
+- tables/Table_creation/game_a.py
+- tables/Table_creation/game_b.py
+- tables/Table_creation/game-c.py
+
+---
+
 ## Execution Hierarchy
 
-The scripts must be executed in the following order:
+The scripts must be executed in the following order.
 
-1. **Game Creation Script**
+---
+
+## 1. Game Creation Script
 
 Run this script first:
 
-python game_creation.py
+python Games/game_creation/Game_creation.py
+
 Purpose:
 - Logs into the application
-- Navigates to the Setup section
+- Navigates to the setup/game creation section
 - Creates the following games:
   - Game A
   - Game B
@@ -23,11 +37,11 @@ Purpose:
 
 ---
 
-2. **Table Creation for Game A**
+## 2. Table Creation for Game A
 
 After games are created, run:
-python game_a_table_creation.py
 
+python tables/Table_creation/game_a.py
 
 Purpose:
 - Opens Game A
@@ -39,52 +53,46 @@ Purpose:
 
 ---
 
-3. **Table Creation for Game B**
+## 3. Table Creation for Game B
 
 Run:
-python game_b_table_creation.py
+
+python tables/Table_creation/game_b.py
 
 Purpose:
 - Opens Game B
 - Creates tables inside Game B
-- Applies pricing configuration
+- Applies pricing configuration for Game B tables
 
 ---
 
-4. **Table Creation for Game C**
+## 4. Table Creation for Game C
 
 Run:
 
-Purpose:
-- Opens Game B
-- Creates tables inside Game B
-- Applies pricing configuration
-
----
-
-4. **Table Creation for Game C**
-
-Run:
-
-Purpose:
-- Opens Game B
-- Creates tables inside Game B
-- Applies pricing configuration
-
----
-
-4. **Table Creation for Game C**
-
-Run:
-python game_c_table_creation.py
+python tables/Table_creation/game-c.py
 
 Purpose:
 - Opens Game C
 - Creates tables inside Game C
-- Applies pricing configuration
+- Applies pricing configuration for Game C tables
 
 ---
 
 ## Full Workflow
 
+Run the scripts in this exact order:
 
+python Games/game_creation/Game_creation.py  
+python tables/Table_creation/game_a.py  
+python tables/Table_creation/game_b.py  
+python tables/Table_creation/game-c.py  
+
+---
+
+## Important Notes
+
+- Always run the **game creation script first** before running any table creation script.
+- Ensure the **web application is running locally** before executing the scripts.
+- Do not change file names unless this execution document is updated.
+- Screenshots captured during automation will be stored in the respective **screenshots** folders.
