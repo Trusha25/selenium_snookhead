@@ -7,6 +7,7 @@ This document explains the correct order to run the automation scripts in the Sn
 The project contains the following relevant scripts:
 
 - Games/game_creation/Game_creation.py
+- Games/game_deletion/Game_Deletion.py
 - tables/Table_creation/game_a.py
 - tables/Table_creation/game_b.py
 - tables/Table_creation/game-c.py
@@ -79,14 +80,24 @@ Purpose:
 
 ---
 
+## Game_deletion
+
+Purpose:
+- login
+- navigates through sidebar selects "set up menu"
+- Clicks the Edit option in the Games section
+- Selects the Delete option for a game
+- confirm  the deletion 
+
 ## Full Workflow
 
 Run the scripts in this exact order:
 
-python Games/game_creation/Game_creation.py  
+python Games/game_creation/Game_creation.py 
 python tables/Table_creation/game_a.py  
 python tables/Table_creation/game_b.py  
-python tables/Table_creation/game-c.py  
+python tables/Table_creation/game-c.py
+python Games/game_deletion/Game_deletion.py   
 
 ---
 

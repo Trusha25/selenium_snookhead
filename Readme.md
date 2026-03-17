@@ -46,7 +46,15 @@ Each script performs the following steps:
 * Enters pricing values
 * Saves screenshots during execution
 
+
 ---
+
+## Game_Deletion
+- login
+- navigates through sidebar selects "set up menu"
+- Clicks the Edit option in the Games section
+- Selects the Delete option for a game
+- confirm  the deletion 
 
 # Technologies Used
 
