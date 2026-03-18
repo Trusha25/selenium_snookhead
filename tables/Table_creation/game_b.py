@@ -7,6 +7,8 @@ import time
 import os
 
 
+
+
 # Summary:
 # This script automates the creation of tables for Game B in the Snookhead
 # web application. It logs into the system, selects Game B, and creates
@@ -50,7 +52,7 @@ email = wait.until(
 password = driver.find_element(By.XPATH, "//input[@type='password']")
 
 email.send_keys("trushajadhav25@gmail.com")
-password.send_keys("a7b3SNuSUrYyDUx")
+password.send_keys("trusha25")
 
 driver.find_element(By.XPATH, "//button[contains(text(),'Login')]").click()
 
@@ -66,9 +68,9 @@ game_b_tab = wait.until(
     EC.element_to_be_clickable((By.XPATH, "//*[normalize-space()='Game B']"))
 )
 
-actions.move_to_element(game_b_tab).perform()
-time.sleep(1)
-screenshot(driver, "02_hover_game_b")
+# actions.move_to_element(game_b_tab).perform()
+# time.sleep(1)
+# screenshot(driver, "02_hover_game_b")
 
 driver.execute_script("arguments[0].click();", game_b_tab)
 time.sleep(2)

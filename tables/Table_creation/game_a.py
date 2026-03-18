@@ -48,7 +48,7 @@ email = wait.until(
 password = driver.find_element(By.XPATH, "//input[@type='password']")
 
 email.send_keys("trushajadhav25@gmail.com")
-password.send_keys("a7b3SNuSUrYyDUx")
+password.send_keys("trusha25")
 
 driver.find_element(By.XPATH, "//button[contains(text(),'Login')]").click()
 

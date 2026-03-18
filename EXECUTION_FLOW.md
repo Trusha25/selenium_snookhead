@@ -158,7 +158,7 @@ python Games/game_deletion/Game_Deletion.py
 ## 7. Main End-to-End Script
 
 ```bash
-python main.py
+python whole-flow/main.py
 ```
 
 ### Purpose:
@@ -175,6 +175,22 @@ python main.py
 
 ---
 
+```bash
+python queue_flow/main.py
+```
+## purpose
+- Executes queue flow automation:
+- Login
+- Table booking (A, B, C)
+- Add customer to queue
+- Wait for Table A session to complete
+- Handle Seat Now popup
+- Reassign table to next customer
+- Wait for new session
+- Navigate back to Queue
+- Validates queue and table reassignment functionality
+- Captures screenshots during execution
+
 ## Full Workflow
 
 Run the scripts in this exact order:
@@ -188,7 +204,8 @@ python Booking/timed_booking.py
 python Booking/stopwatch_booking.py  
 python Booking/frame_booking.py  
 python Games/game_deletion/Game_Deletion.py  
-python main.py  
+python whole_flow/main.py  
+python queue_flow/main.py
 ```
 
 ---

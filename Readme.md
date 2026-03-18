@@ -3,13 +3,14 @@
 This project automates **end-to-end workflows** of the Snookhead web application using **Python and Selenium WebDriver**.
 
 The automation simulates real user actions such as:
-- Logging in
-- Creating games
-- Creating tables
-- Booking tables (timed, stopwatch, frames)
-- Generating and paying bills
-- Deleting games
-- Verifying revenue updates
+- Logging in  
+- Creating games  
+- Creating tables  
+- Booking tables (timed, stopwatch, frames)  
+- Queue management  
+- Generating and paying bills  
+- Deleting games  
+- Verifying revenue updates  
 
 ---
 
@@ -24,10 +25,10 @@ The automation covers multiple workflows.
 The game creation script performs the following actions:
 
 - Logs into the application  
-- Navigates to **Setup → Games**  
+- Navigates to **Set up menu → Games**  
 - Creates multiple games:
-  - Game A
-  - Game B
+  - Game A  
+  - Game B  
   - Game C  
 - Saves screenshots during execution  
 - Stores created game names in `games.txt`  
@@ -61,8 +62,8 @@ Each script performs the following steps:
 The project includes three types of booking automation:
 
 ### (a) Timed Booking
-- Books table for fixed time (e.g., 10 minutes)  
-- Selects member (battata_wada)  
+- Books table for fixed time  
+- Selects member  
 - Confirms booking  
 - Handles popups  
 - Verifies timer functionality  
@@ -79,17 +80,35 @@ The project includes three types of booking automation:
 
 ---
 
-## 4. Billing & Payment
+## 4. Queue Automation
+
+- Navigates to **Queue section**  
+- Selects game (Game B)  
+- Adds customer to queue  
+- Enters:
+  - Member name  
+  - Phone number  
+  - Time  
+- Confirms queue entry  
+- Waits for table release  
+- Handles **Seat Next popup**  
+- Reassigns table to next customer  
+- Waits for new session  
+- Returns to Queue  
+
+---
+
+## 5. Billing & Payment
 
 - Navigates to billing section  
-- Selects booked table/member  
+- Selects booked member/table  
 - Clicks **Pay Now**  
 - Confirms payment  
 - Captures payment screenshots  
 
 ---
 
-## 5. Game Deletion
+## 6. Game Deletion
 
 - Logs into the application  
 - Navigates to **Set up menu**  
@@ -100,7 +119,7 @@ The project includes three types of booking automation:
 
 ---
 
-## 6. End-to-End Automation (Main Script)
+## 7. End-to-End Automation (Main Script)
 
 The `main.py` script performs full system validation:
 
@@ -108,7 +127,8 @@ The `main.py` script performs full system validation:
 - Owner’s Panel revenue check  
 - Table creation (Game C)  
 - Booking (timed)  
-- Timer validation  
+- Queue handling  
+- Seat Next automation  
 - Billing and payment  
 - Revenue verification  
 
@@ -151,6 +171,10 @@ snookhead_selenium/
 │   ├── frame_booking.py
 │   └── screenshots/
 │
+├── queue_flow/
+│   ├── main.py
+│   └── screenshots/
+│
 ├── EXECUTION_FLOW.md
 ├── main.py
 └── README.md
@@ -181,12 +205,33 @@ python Booking/stopwatch_booking.py
 python Booking/frame_booking.py
 ```
 
-### 4. Delete Game (Optional)
+### 4. Run Queue Flow
+```
+python queue_flow/main.py
+```
+
+### Purpose:
+- Executes queue flow automation:
+  - Login  
+  - Table booking (A, B, C)  
+  - Add customer to queue  
+  - Handle Seat Next popup  
+  - Reassign table  
+  - Wait for new session  
+  - Return to Queue  
+- Validates queue functionality  
+- Captures screenshots  
+
+---
+
+### 5. Delete Game (Optional)
 ```
 python Games/game_deletion/Game_Deletion.py
 ```
 
-### 5. Run End-to-End Flow
+---
+
+### 6. Run End-to-End Flow
 ```
 python main.py
 ```
@@ -211,8 +256,9 @@ folders within each module.
 
 - Ensure the **Snookhead web application is running locally** before executing scripts  
 - Make sure **ChromeDriver is installed and compatible** with your Chrome version  
-- Follow the execution order mentioned in `EXECUTION_FLOW.md`  
+- Follow execution order in `EXECUTION_FLOW.md`  
 - Booking scripts depend on tables being already created  
+- Queue flow depends on active table sessions  
 - Main script validates the **complete system workflow**  
 
 ---
@@ -224,7 +270,8 @@ This project provides a complete Selenium automation suite for:
 - Game management  
 - Table management  
 - Booking workflows  
+- Queue handling  
 - Billing and payments  
 - System validation  
 
-It ensures reliable and repeatable testing of the Snookhead application.
+It ensures reliable, repeatable, and end-to-end testing of the Snookhead application.
