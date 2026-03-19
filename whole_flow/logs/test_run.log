@@ -1,0 +1,76 @@
+2026-03-19 15:40:27,724 | INFO | snookhead | === Test started ===
+2026-03-19 15:40:28,678 | INFO | snookhead | Opened application
+2026-03-19 15:40:31,863 | INFO | snookhead | Login successful
+2026-03-19 15:40:31,974 | INFO | snookhead | Screenshot saved: screenshots/01_dashboard.png
+2026-03-19 15:40:38,299 | INFO | snookhead | Screenshot saved: screenshots/02_owners_panel.png
+2026-03-19 15:40:38,302 | INFO | snookhead | Opened Owner's Panel
+2026-03-19 15:40:38,371 | INFO | snookhead | Initial revenue: 0.0
+2026-03-19 15:40:41,609 | INFO | snookhead | Screenshot saved: screenshots/03_setup_menu.png
+2026-03-19 15:40:41,610 | INFO | snookhead | Opened Set up menu
+2026-03-19 15:40:44,813 | INFO | snookhead | Screenshot saved: screenshots/04_game_opened.png
+2026-03-19 15:40:44,815 | INFO | snookhead | Opened Game C
+2026-03-19 15:40:49,870 | INFO | snookhead | Screenshot saved: screenshots/05_table_details_filled.png
+2026-03-19 15:40:55,559 | INFO | snookhead | Screenshot saved: screenshots/06_table_created.png
+2026-03-19 15:40:55,559 | INFO | snookhead | Created table: Table X
+2026-03-19 15:40:58,778 | INFO | snookhead | Screenshot saved: screenshots/07_dashboard_again.png
+2026-03-19 15:40:58,779 | INFO | snookhead | Returned to Dashboard
+2026-03-19 15:41:05,119 | INFO | snookhead | Screenshot saved: screenshots/08_table_opened.png
+2026-03-19 15:41:08,713 | INFO | snookhead | Screenshot saved: screenshots/09_booking_details_filled.png
+2026-03-19 15:41:11,948 | INFO | snookhead | Screenshot saved: screenshots/10_booking_confirmed.png
+2026-03-19 15:41:11,948 | INFO | snookhead | Table booked successfully
+2026-03-19 15:41:12,611 | INFO | snookhead | OK popup handled
+2026-03-19 15:41:14,613 | INFO | snookhead | Waiting for 70 seconds for timer to complete
+2026-03-19 15:42:24,708 | INFO | snookhead | OK popup handled
+2026-03-19 15:42:26,825 | INFO | snookhead | Screenshot saved: screenshots/timer_completed_popup.png
+2026-03-19 15:42:30,114 | INFO | snookhead | Screenshot saved: screenshots/11_billing_page.png
+2026-03-19 15:42:30,115 | INFO | snookhead | Opened Billing page
+2026-03-19 15:42:33,496 | INFO | snookhead | Screenshot saved: screenshots/12_pay_bill_clicked.png
+2026-03-19 15:42:36,789 | INFO | snookhead | Screenshot saved: screenshots/13_payment_done.png
+2026-03-19 15:42:36,790 | INFO | snookhead | Paid bill amount: 10.0
+2026-03-19 15:42:42,997 | INFO | snookhead | Screenshot saved: screenshots/02_owners_panel.png
+2026-03-19 15:42:42,997 | INFO | snookhead | Opened Owner's Panel
+2026-03-19 15:42:43,039 | INFO | snookhead | Updated revenue: 0.0
+2026-03-19 15:42:43,040 | ERROR | snookhead | Test failed: Revenue update seems incorrect.
+Traceback (most recent call last):
+  File "C:\Users\Dell\Desktop\snookhead_selenium\whole_flow\main.py", line 51, in run_test
+    updated_revenue >= initial_revenue + paid_amount
+AssertionError: Revenue update seems incorrect.
+2026-03-19 15:42:45,973 | INFO | snookhead | Browser closed
+2026-03-19 15:49:58,802 | INFO | snookhead | === Test started ===
+2026-03-19 15:49:59,615 | INFO | snookhead | Opened application
+2026-03-19 15:50:02,349 | INFO | snookhead | Login successful
+2026-03-19 15:50:02,563 | INFO | snookhead | Screenshot saved: screenshots/01_dashboard.png
+2026-03-19 15:50:08,675 | INFO | snookhead | Screenshot saved: screenshots/02_owners_panel.png
+2026-03-19 15:50:08,675 | INFO | snookhead | Opened Owner's Panel
+2026-03-19 15:50:08,719 | INFO | snookhead | Initial revenue: 0.0
+2026-03-19 15:50:11,946 | INFO | snookhead | Screenshot saved: screenshots/03_setup_menu.png
+2026-03-19 15:50:11,947 | INFO | snookhead | Opened Set up menu
+2026-03-19 15:50:15,160 | INFO | snookhead | Screenshot saved: screenshots/04_game_opened.png
+2026-03-19 15:50:15,161 | INFO | snookhead | Opened Game C
+2026-03-19 15:50:19,969 | INFO | snookhead | Screenshot saved: screenshots/05_table_details_filled.png
+2026-03-19 15:50:25,667 | INFO | snookhead | Screenshot saved: screenshots/06_table_created.png
+2026-03-19 15:50:25,667 | INFO | snookhead | Created table: Table X
+2026-03-19 15:50:28,850 | INFO | snookhead | Screenshot saved: screenshots/07_dashboard_again.png
+2026-03-19 15:50:28,851 | INFO | snookhead | Returned to Dashboard
+2026-03-19 15:50:35,178 | INFO | snookhead | Screenshot saved: screenshots/08_table_opened.png
+2026-03-19 15:50:38,768 | INFO | snookhead | Screenshot saved: screenshots/09_booking_details_filled.png
+2026-03-19 15:50:41,987 | INFO | snookhead | Screenshot saved: screenshots/10_booking_confirmed.png
+2026-03-19 15:50:41,987 | INFO | snookhead | Table booked successfully
+2026-03-19 15:50:42,634 | INFO | snookhead | OK popup handled
+2026-03-19 15:50:44,635 | INFO | snookhead | Waiting for 70 seconds for timer to complete
+2026-03-19 15:51:54,740 | INFO | snookhead | OK popup handled
+2026-03-19 15:51:56,846 | INFO | snookhead | Screenshot saved: screenshots/timer_completed_popup.png
+2026-03-19 15:52:00,120 | INFO | snookhead | Screenshot saved: screenshots/11_billing_page.png
+2026-03-19 15:52:00,121 | INFO | snookhead | Opened Billing page
+2026-03-19 15:52:03,426 | INFO | snookhead | Screenshot saved: screenshots/12_pay_bill_clicked.png
+2026-03-19 15:52:06,695 | INFO | snookhead | Screenshot saved: screenshots/13_payment_done.png
+2026-03-19 15:52:06,695 | INFO | snookhead | Paid bill amount: 10.0
+2026-03-19 15:52:12,791 | INFO | snookhead | Screenshot saved: screenshots/02_owners_panel.png
+2026-03-19 15:52:12,791 | INFO | snookhead | Opened Owner's Panel
+2026-03-19 15:52:12,847 | INFO | snookhead | Updated revenue: 0.0
+2026-03-19 15:52:12,848 | ERROR | snookhead | Test failed: Revenue update seems incorrect.
+Traceback (most recent call last):
+  File "C:\Users\Dell\Desktop\snookhead_selenium\whole_flow\main.py", line 51, in run_test
+    updated_revenue >= initial_revenue + paid_amount
+AssertionError: Revenue update seems incorrect.
+2026-03-19 15:52:15,682 | INFO | snookhead | Browser closed
