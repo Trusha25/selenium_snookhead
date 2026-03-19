@@ -74,3 +74,185 @@ Traceback (most recent call last):
     updated_revenue >= initial_revenue + paid_amount
 AssertionError: Revenue update seems incorrect.
 2026-03-19 15:52:15,682 | INFO | snookhead | Browser closed
+2026-03-19 16:06:24,055 | INFO | snookhead | === Cleanup started ===
+2026-03-19 16:06:24,775 | INFO | snookhead | Opened application
+2026-03-19 16:06:28,367 | INFO | snookhead | Login successful
+2026-03-19 16:06:28,580 | INFO | snookhead | Screenshot saved: screenshots/01_dashboard.png
+2026-03-19 16:06:31,798 | INFO | snookhead | Screenshot saved: screenshots/cleanup_01_setup_menu.png
+2026-03-19 16:06:31,799 | INFO | snookhead | Opened Set up menu
+2026-03-19 16:06:35,012 | INFO | snookhead | Screenshot saved: screenshots/cleanup_02_game_opened.png
+2026-03-19 16:06:35,013 | INFO | snookhead | Opened game: Game C
+2026-03-19 16:06:38,241 | INFO | snookhead | Screenshot saved: screenshots/cleanup_03_edit_mode.png
+2026-03-19 16:06:38,243 | INFO | snookhead | Enabled edit mode
+2026-03-19 16:06:58,293 | ERROR | snookhead | Cleanup failed: Message: 
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff6c4683045+14585]
+	chromedriver!GetHandleVerifier [0x7ff6c46830b0+145f0]
+	chromedriver!(No symbol) [0x7ff6c43edb7d]
+	chromedriver!(No symbol) [0x7ff6c44473ae]
+	chromedriver!(No symbol) [0x7ff6c44476bc]
+	chromedriver!(No symbol) [0x7ff6c4497a57]
+	chromedriver!(No symbol) [0x7ff6c44945af]
+	chromedriver!(No symbol) [0x7ff6c4439a18]
+	chromedriver!(No symbol) [0x7ff6c443a8f3]
+	chromedriver!GetHandleVerifier [0x7ff6c498ac5d+31c19d]
+	chromedriver!GetHandleVerifier [0x7ff6c498536d+3168ad]
+	chromedriver!GetHandleVerifier [0x7ff6c49a7d8a+3392ca]
+	chromedriver!GetHandleVerifier [0x7ff6c469f445+30985]
+	chromedriver!GetHandleVerifier [0x7ff6c46a84dc+39a1c]
+	chromedriver!GetHandleVerifier [0x7ff6c468c634+1db74]
+	chromedriver!GetHandleVerifier [0x7ff6c468c7e6+1dd26]
+	chromedriver!GetHandleVerifier [0x7ff6c4671387+28c7]
+	KERNEL32!BaseThreadInitThunk [0x7ffc1001e8d7+17]
+	ntdll!RtlUserThreadStart [0x7ffc1130c48c+2c]
+Traceback (most recent call last):
+  File "C:\Users\Dell\Desktop\snookhead_selenium\whole_flow\cleanup_table.py", line 123, in cleanup_table
+    delete_table(driver, wait, TABLE_NAME, logger)
+  File "C:\Users\Dell\Desktop\snookhead_selenium\whole_flow\cleanup_table.py", line 57, in delete_table
+    delete_btn = wait.until(
+                 ^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\support\wait.py", line 121, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff6c4683045+14585]
+	chromedriver!GetHandleVerifier [0x7ff6c46830b0+145f0]
+	chromedriver!(No symbol) [0x7ff6c43edb7d]
+	chromedriver!(No symbol) [0x7ff6c44473ae]
+	chromedriver!(No symbol) [0x7ff6c44476bc]
+	chromedriver!(No symbol) [0x7ff6c4497a57]
+	chromedriver!(No symbol) [0x7ff6c44945af]
+	chromedriver!(No symbol) [0x7ff6c4439a18]
+	chromedriver!(No symbol) [0x7ff6c443a8f3]
+	chromedriver!GetHandleVerifier [0x7ff6c498ac5d+31c19d]
+	chromedriver!GetHandleVerifier [0x7ff6c498536d+3168ad]
+	chromedriver!GetHandleVerifier [0x7ff6c49a7d8a+3392ca]
+	chromedriver!GetHandleVerifier [0x7ff6c469f445+30985]
+	chromedriver!GetHandleVerifier [0x7ff6c46a84dc+39a1c]
+	chromedriver!GetHandleVerifier [0x7ff6c468c634+1db74]
+	chromedriver!GetHandleVerifier [0x7ff6c468c7e6+1dd26]
+	chromedriver!GetHandleVerifier [0x7ff6c4671387+28c7]
+	KERNEL32!BaseThreadInitThunk [0x7ffc1001e8d7+17]
+	ntdll!RtlUserThreadStart [0x7ffc1130c48c+2c]
+
+2026-03-19 16:07:01,040 | INFO | snookhead | Browser closed after cleanup
+2026-03-19 16:11:52,480 | INFO | snookhead | ========== CLEANUP STARTED ==========
+2026-03-19 16:11:53,400 | INFO | snookhead | Opened application
+2026-03-19 16:11:57,237 | INFO | snookhead | Login successful
+2026-03-19 16:11:57,747 | INFO | snookhead | Screenshot saved: screenshots/01_dashboard.png
+2026-03-19 16:11:57,752 | INFO | snookhead | Opening Set up menu
+2026-03-19 16:12:01,150 | INFO | snookhead | Screenshot saved: screenshots/cleanup_01_setup_menu.png
+2026-03-19 16:12:01,151 | INFO | snookhead | Opening game: Game C
+2026-03-19 16:12:04,473 | INFO | snookhead | Screenshot saved: screenshots/cleanup_02_game_opened.png
+2026-03-19 16:12:04,474 | INFO | snookhead | Enabling edit mode
+2026-03-19 16:12:07,810 | INFO | snookhead | Screenshot saved: screenshots/cleanup_03_edit_mode.png
+2026-03-19 16:12:07,811 | INFO | snookhead | Edit mode enabled
+2026-03-19 16:12:07,812 | INFO | snookhead | Trying to click delete for table: Table X
+2026-03-19 16:12:08,914 | INFO | snookhead | Finding container for table: Table X
+2026-03-19 16:12:09,067 | INFO | snookhead | Found table container using xpath: //*[normalize-space()='Table X']/ancestor::div[contains(@class,'setup')][1]
+2026-03-19 16:12:09,098 | INFO | snookhead | Delete candidate failed: .//button[@title='Delete Table'] | Message: no such element: Unable to locate element: {"method":"xpath","selector":".//button[@title='Delete Table']"}
+  (Session info: chrome=146.0.7680.80); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff6c4683045+14585]
+	chromedriver!GetHandleVerifier [0x7ff6c46830b0+145f0]
+	chromedriver!(No symbol) [0x7ff6c43edb7d]
+	chromedriver!(No symbol) [0x7ff6c44473ae]
+	chromedriver!(No symbol) [0x7ff6c44476bc]
+	chromedriver!(No symbol) [0x7ff6c443b2cc]
+	chromedriver!(No symbol) [0x7ff6c443b176]
+	chromedriver!(No symbol) [0x7ff6c44945af]
+	chromedriver!(No symbol) [0x7ff6c4439a18]
+	chromedriver!(No symbol) [0x7ff6c443a8f3]
+	chromedriver!GetHandleVerifier [0x7ff6c498ac5d+31c19d]
+	chromedriver!GetHandleVerifier [0x7ff6c498536d+3168ad]
+	chromedriver!GetHandleVerifier [0x7ff6c49a7d8a+3392ca]
+	chromedriver!GetHandleVerifier [0x7ff6c469f445+30985]
+	chromedriver!GetHandleVerifier [0x7ff6c46a84dc+39a1c]
+	chromedriver!GetHandleVerifier [0x7ff6c468c634+1db74]
+	chromedriver!GetHandleVerifier [0x7ff6c468c7e6+1dd26]
+	chromedriver!GetHandleVerifier [0x7ff6c4671387+28c7]
+	KERNEL32!BaseThreadInitThunk [0x7ffc1001e8d7+17]
+	ntdll!RtlUserThreadStart [0x7ffc1130c48c+2c]
+
+2026-03-19 16:12:09,157 | INFO | snookhead | Delete candidate failed: .//button[contains(@class,'delete')] | Message: no such element: Unable to locate element: {"method":"xpath","selector":".//button[contains(@class,'delete')]"}
+  (Session info: chrome=146.0.7680.80); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff6c4683045+14585]
+	chromedriver!GetHandleVerifier [0x7ff6c46830b0+145f0]
+	chromedriver!(No symbol) [0x7ff6c43edb7d]
+	chromedriver!(No symbol) [0x7ff6c44473ae]
+	chromedriver!(No symbol) [0x7ff6c44476bc]
+	chromedriver!(No symbol) [0x7ff6c443b2cc]
+	chromedriver!(No symbol) [0x7ff6c443b176]
+	chromedriver!(No symbol) [0x7ff6c44945af]
+	chromedriver!(No symbol) [0x7ff6c4439a18]
+	chromedriver!(No symbol) [0x7ff6c443a8f3]
+	chromedriver!GetHandleVerifier [0x7ff6c498ac5d+31c19d]
+	chromedriver!GetHandleVerifier [0x7ff6c498536d+3168ad]
+	chromedriver!GetHandleVerifier [0x7ff6c49a7d8a+3392ca]
+	chromedriver!GetHandleVerifier [0x7ff6c469f445+30985]
+	chromedriver!GetHandleVerifier [0x7ff6c46a84dc+39a1c]
+	chromedriver!GetHandleVerifier [0x7ff6c468c634+1db74]
+	chromedriver!GetHandleVerifier [0x7ff6c468c7e6+1dd26]
+	chromedriver!GetHandleVerifier [0x7ff6c4671387+28c7]
+	KERNEL32!BaseThreadInitThunk [0x7ffc1001e8d7+17]
+	ntdll!RtlUserThreadStart [0x7ffc1130c48c+2c]
+
+2026-03-19 16:12:09,200 | INFO | snookhead | Delete candidate failed: .//*[name()='svg']/ancestor::button[1] | Message: no such element: Unable to locate element: {"method":"xpath","selector":".//*[name()='svg']/ancestor::button[1]"}
+  (Session info: chrome=146.0.7680.80); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff6c4683045+14585]
+	chromedriver!GetHandleVerifier [0x7ff6c46830b0+145f0]
+	chromedriver!(No symbol) [0x7ff6c43edb7d]
+	chromedriver!(No symbol) [0x7ff6c44473ae]
+	chromedriver!(No symbol) [0x7ff6c44476bc]
+	chromedriver!(No symbol) [0x7ff6c443b2cc]
+	chromedriver!(No symbol) [0x7ff6c443b176]
+	chromedriver!(No symbol) [0x7ff6c44945af]
+	chromedriver!(No symbol) [0x7ff6c4439a18]
+	chromedriver!(No symbol) [0x7ff6c443a8f3]
+	chromedriver!GetHandleVerifier [0x7ff6c498ac5d+31c19d]
+	chromedriver!GetHandleVerifier [0x7ff6c498536d+3168ad]
+	chromedriver!GetHandleVerifier [0x7ff6c49a7d8a+3392ca]
+	chromedriver!GetHandleVerifier [0x7ff6c469f445+30985]
+	chromedriver!GetHandleVerifier [0x7ff6c46a84dc+39a1c]
+	chromedriver!GetHandleVerifier [0x7ff6c468c634+1db74]
+	chromedriver!GetHandleVerifier [0x7ff6c468c7e6+1dd26]
+	chromedriver!GetHandleVerifier [0x7ff6c4671387+28c7]
+	KERNEL32!BaseThreadInitThunk [0x7ffc1001e8d7+17]
+	ntdll!RtlUserThreadStart [0x7ffc1130c48c+2c]
+
+2026-03-19 16:12:09,238 | INFO | snookhead | Delete candidate failed: .//button[.//*[name()='svg']] | Message: no such element: Unable to locate element: {"method":"xpath","selector":".//button[.//*[name()='svg']]"}
+  (Session info: chrome=146.0.7680.80); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff6c4683045+14585]
+	chromedriver!GetHandleVerifier [0x7ff6c46830b0+145f0]
+	chromedriver!(No symbol) [0x7ff6c43edb7d]
+	chromedriver!(No symbol) [0x7ff6c44473ae]
+	chromedriver!(No symbol) [0x7ff6c44476bc]
+	chromedriver!(No symbol) [0x7ff6c443b2cc]
+	chromedriver!(No symbol) [0x7ff6c443b176]
+	chromedriver!(No symbol) [0x7ff6c44945af]
+	chromedriver!(No symbol) [0x7ff6c4439a18]
+	chromedriver!(No symbol) [0x7ff6c443a8f3]
+	chromedriver!GetHandleVerifier [0x7ff6c498ac5d+31c19d]
+	chromedriver!GetHandleVerifier [0x7ff6c498536d+3168ad]
+	chromedriver!GetHandleVerifier [0x7ff6c49a7d8a+3392ca]
+	chromedriver!GetHandleVerifier [0x7ff6c469f445+30985]
+	chromedriver!GetHandleVerifier [0x7ff6c46a84dc+39a1c]
+	chromedriver!GetHandleVerifier [0x7ff6c468c634+1db74]
+	chromedriver!GetHandleVerifier [0x7ff6c468c7e6+1dd26]
+	chromedriver!GetHandleVerifier [0x7ff6c4671387+28c7]
+	KERNEL32!BaseThreadInitThunk [0x7ffc1001e8d7+17]
+	ntdll!RtlUserThreadStart [0x7ffc1130c48c+2c]
+
+2026-03-19 16:12:10,387 | INFO | snookhead | Clicked delete button using fallback xpath: //*[normalize-space()='Table X']/following::button[@title='Delete Table'][1]
+2026-03-19 16:12:12,640 | INFO | snookhead | Screenshot saved: screenshots/cleanup_04_delete_button_clicked.png
+2026-03-19 16:12:12,642 | INFO | snookhead | Looking for delete confirmation popup
+2026-03-19 16:12:13,791 | INFO | snookhead | Clicked popup confirmation using xpath: //button[normalize-space()='Delete']
+2026-03-19 16:12:15,952 | INFO | snookhead | Screenshot saved: screenshots/cleanup_05_popup_delete_confirmed.png
+2026-03-19 16:12:15,952 | INFO | snookhead | Verifying deletion of table: Table X
+2026-03-19 16:12:19,002 | INFO | snookhead | Verified table deleted: Table X
+2026-03-19 16:12:19,169 | INFO | snookhead | Screenshot saved: screenshots/cleanup_06_delete_verified.png
+2026-03-19 16:12:19,170 | INFO | snookhead | ========== CLEANUP COMPLETED SUCCESSFULLY ==========
+2026-03-19 16:12:23,169 | INFO | snookhead | Browser closed after cleanup
